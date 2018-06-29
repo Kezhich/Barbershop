@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Главная страница - Barbershop Borodinski</title>
+    <meta name="description" content="предоставляем услуги стрижки, подобраем аксессуары для ухода за волосами и бородой">
+    <meta name="keywords" content="парикмахерская, стрижка, уход, аксессуары, волосы, парихмахерская, борода">
+    <meta name="author" content="vk.com/id34214149">
+    <link rel="StyleSheet" href="css/normalize.css" type="text/css">
+    <link rel="StyleSheet" href="css/style.css" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container clearfix">
+            <nav class="main-navigation">
+                <ul>
+                    <li class="main-navigation-item current-page">
+                        <a href="index.html">главная</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="#">информация</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="#">новости</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="price.html">прайс-лист</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="catalog.html">магазин</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="#">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-login">
+                <a href="#">вход</a>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <figure class="content-logo">
+            <img src="img/content-logo.png" width="368" height="152" alt="barbershop borodinski">
+        </figure>
+        <div class="content-advantages clearfix">
+            <section class="content-advantages-block">
+                <h2 class="content-advantages-title">быстро</h2>
+                <p>мы&nbsp;делаем свою работу быстро! два часа пролетят незаметно и&nbsp;вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки!</p>
+            </section>
+            <section class="content-advantages-block">
+                <h2 class="content-advantages-title">круто</h2>
+                <p>забудьте, как вы&nbsp;стриглись раньше. мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино! во&nbsp;всяком случае внешне.</p>
+            </section>
+            <section class="content-advantages-block">
+                <h2 class="content-advantages-title">дорого</h2>
+                <p>наши мастера&nbsp;&mdash; профессионалы своего дела и&nbsp;не&nbsp;могут стоить дешево. к&nbsp;тому&nbsp;же, разве цена не&nbsp;дает определенный статус?</p>
+            </section>
+        </div>
+        <div class="content-index-row clearfix">
+            <section class="content-left-column content-news">
+                <h2 class="content-column-title">новости</h2>
+                <ul class="content-news-preview">
+                    <li>
+                        <p>нам наконец завезли ягермайстер! теперь вы&nbsp;можете пропустить стаканчик во&nbsp;время стрижки</p>
+                        <time datetime="2013-09-25">25 сентября</time>
+                    </li>
+                    <li>
+                        <p>в&nbsp;нашей команде пополнение, борис &laquo;бритва&raquo; стригунец, обладатель множества титулов и&nbsp;наград пополнил наши стройные ряды</p>
+                        <time datetime="2013-09-19">19 сентября</time>
+                    </li>
+                </ul>
+                <a href="#" class="btn">все новости</a>
+            </section>
+            <section class="content-right-column content-gallery">
+                <h2 class="content-column-title">фотогалерея</h2>
+                <div class="content-gallery-block">
+                    <figure class="content-gallery-img">
+                        <img src="img/content-gallery-picture.jpg" width="286" height="164" alt="интерьер">
+                    </figure>
+                    <button class="btn content-gallery-prev" disabled>назад</button>
+                    <button class="btn content-gallery-next">вперед</button>
+                </div>
+            </section>
+        </div>
+        <div class="content-index-row clearfix">
+            <section class="content-left-column content-contacts">
+                <h2 class="content-column-title">контактная информация</h2>
+                <div class="content-contacts-block">
+                    <p>barbershop «borodinski»</p>
+                    <p>адрес: г. санкт-петербург, ул. полых тварей, д. 13</p>
+                </div>
+                <div class="content-contacts-block">
+                    <p>телефон: +7 (495) 666-02-66</p>
+                    <p>время работы:</p>
+                    <p>пн — пт: с 10:00 до 22:00</p>
+                    <p>сб — вс: с 10:00 до 19:00</p>
+                </div>
+                <a href="#" class="btn js-open-map">как проехать</a>
+                <a href="#" class="btn">обратная связь</a>
+            </section>
+            <section class="content-right-column content-appointment-form">
+                <h2 class="content-column-title">записаться</h2>
+                <p>укажите желаемую дату и&nbsp;время и&nbsp;мы&nbsp;свяжемся с&nbsp;вами для подтверждения брони</p>
+                <form action="/echo" method="post">
+                    <input type="date" name="date" value="" required="required">
+                    <input type="time" name="time" value="" required="required">
+                    <input type="text" name="name" value="" placeholder="ваше имя">
+                    <input type="tel" name="phone" value="" placeholder="телефон" required="required">
+                    <button type="submit" class="btn btn-submit">отправить</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container clearfix">
+            <div class="footer-block footer-contacts">
+                <p>barbershop «borodinski»</p>
+                <p>адрес: г. санкт-петербург, ул. полых тварей, д. 13</p>
+                <a href="#">как нас найти?</a>
+                <p>телефон: +7 (495) 666-02-66</p>
+            </div>
+            <div class="footer-block  footer-social">
+                <p>давайте дружить!</p>
+                <a target="_blank" href="https://vk.com/cumpot" class="btn footer-social-vk">вконтакте</a>
+                <a target="_blank" href="#" class="btn footer-social-fb">фейсбук</a>
+                <a target="_blank" href="https://www.instagram.com/celoban5000dx/" class="btn footer-social-inst">инстаграм</a>
+            </div>
+            <div class="footer-block footer-copyright">
+                <p>дизайн сайта:</p>
+                <a href="#" class="btn">zhopa</a>
+            </div>
+        </div>
+    </footer>
+    <figure class="container map">
+        <img src="img/map.jpg" width="766" height="560" alt="карта">
+    </figure>
+ <div class="modal-content">
+      <button class="modal-content-close" title="Закрыть">Закрыть
+      </button>
+            <h2 class="modal-content-title">личный кабинет</h2>
+            <p>введите пожалуйста свой логин и пароль</p>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method=post>
+            <input type="text" name="login" placeholder="логин" class="login-name" required="required">
+            <input type="password" name="password" placeholder="пароль" class="login-password">
+              <label class="login-checkbox">
+                <input type="checkbox" name="remember" id="remember" checked="checked">
+                <span class="checkbox-indicator"></span>запомнить
+              </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+            <button class="btn" type="submit">войти</button>
+          </form>
+            <div class="modal-overlay"></div>
+</div>
+<div class="modal-content-map">
+  <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15980.10541255634!2d30.406408487378982!3d59.95681060203742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1529070026437" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+
+<script>
+var link = document.querySelector(".header-login");
+var popup = document.querySelector(".modal-content");
+var close = popup.querySelector(".modal-content-close");
+var login = popup.querySelector("[name=login]");
+var form = popup.querySelector("form");
+var password = popup.querySelector("[name=password]");
+var storage = localStorage.getItem("login");
+var mapOpen = document.querySelector(".js-open-map");
+var mapPopup = document.querySelector(".modal-content-map");
+var mapClose = mapPopup.querySelector(".modal-content-close");
+
+link.addEventListener("click", function(event){
+  event.preventDefault();
+  popup.classList.add("modal-content-show");
+  login.focus();
+
+  if(storage) {
+    login.value = storage;
+    password.focus();
+  } else {
+      login.focus();
+    }
+});
+
+// ЛОГИН
+
+close.addEventListener("click", function(event){
+  event.preventDefault();
+  popup.classList.remove("modal-content-show");
+  popup.classList.remove("modal-error");
+});
+
+form.addEventListener("submit", function(event){
+  if (!login.value || !password.value) {
+    event.preventDefault();
+    popup.classList.remove("modal-error");
+    void popup.offsetWidth;
+    popup.classList.add("modal-error");
+    console.log("ass");
+  } else {
+    localStorage.setItem("login",login.value);
+  }
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("modal-content-show")) {
+    popup.classList.remove("modal-content-show");
+    popup.classList.remove("modal-error");
+  }
+}
+});
+
+// КАРТА
+
+mapOpen.addEventListener("click", function(event){
+  event.preventDefault();
+  mapPopup.classList.add("modal-content-show");
+});
+
+mapClose.addEventListener("click", function(event){
+  event.preventDefault();
+  mapPopup.classList.remove("modal-content-show");
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-content-show")) {
+    mapPopup.classList.remove("modal-content-show");
+  }
+}
+});
+
+</script>
+
+</body>
+</html>
